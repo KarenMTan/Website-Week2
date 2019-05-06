@@ -1,0 +1,68 @@
+
+/* The anatomy of a css file is
+selector {
+    body 
+ }
+ */
+
+ /* Selectors can be html elements: body, section, div, etc. 
+    They can also be ID's, or unique elements defined in your html document
+    Lastly, they can also be classes, which group elements together in your html document
+*/
+
+body {
+    /* color: selects font color*/
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+section {
+    /* margin: denotes spacing outside of your border
+    right-click and inspect element to see margin, border, and padding of each element */
+    margin: 50px;
+    display: flex;
+}
+
+.dark-background {
+    background-color: #202020;
+}
+
+.light-background {
+    background-color: #fffdf1;
+}
+
+#intro {
+    /* flex-box! Use w3schools to find more on flex-box */
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 50px;
+}
+
+#garden {
+    /* Denotes spacing inside of your border */
+    padding: 20px 40px 20px 0;
+    width: 650px;
+    height: 400px;
+    /* Prevent your picture from being squished within the sizes you set */
+    object-fit: cover;
+}
+
+#aboutMe {
+    margin: -20px -10px -13px -10px;
+    padding: 0 30px;
+    flex-direction: column;
+    color: #ffe9e9;
+}
+
+#OC {
+    height: 500px;
+    width: 800px;
+    /* flex-box properties */
+    align-self: center;
+    object-fit: cover;
+}
+
+#footer {
+    font-size: 40px;
+}
